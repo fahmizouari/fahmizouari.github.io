@@ -3,13 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenue</title>
+    <title>Fahmi ZOUARI - CV</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .skills, .languages, .contact {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .skills div, .languages div {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur ma page GitHub</h1>
-    <p>Ma page personnalisée avec GitHub Pages ! 🚀</p>
+    <header>
+        <h1>Fahmi ZOUARI</h1>
+        <p>Ingénieur en génie logiciel | Flutter | Angular | NestJs</p>
+    </header>
+    <div class="container">
+        <h2>À propos de moi</h2>
+        <p>Passionné par le développement web et mobile, j'aime relever de nouveaux défis et créer des solutions innovantes.</p>
+        
+        <h2>Compétences Techniques</h2>
+        <div class="skills">
+            <div>Dart</div>
+            <div>TypeScript</div>
+            <div>Java</div>
+            <div>Flutter</div>
+            <div>Angular</div>
+            <div>NestJs</div>
+            <div>Spring Boot</div>
+        </div>
+        
+        <h2>Langues</h2>
+        <div class="languages">
+            <div>Arabe: Expérimenté</div>
+            <div>Français: Avancé</div>
+            <div>Anglais: Indépendant</div>
+        </div>
+        
+        <h2>Contact</h2>
+        <div class="contact">
+            <a href="mailto:fahmi.zouari@hotmail.com">Email</a> |
+            <a href="https://www.linkedin.com/in/fahmi-zouari/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/fahmi-zouari" target="_blank">GitHub</a>
+        </div>
+    </div>
 </body>
 </html>
+
