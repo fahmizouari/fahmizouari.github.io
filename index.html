@@ -17,7 +17,7 @@
         header {
             background: #222;
             color: white;
-            padding: 40px 20px;
+            padding: 80px 20px;
         }
         .profile-img {
             width: 150px;
@@ -86,52 +86,202 @@
             border-radius: 5px;
             font-weight: bold;
         }
+
+        .screenshots {
+    display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne si l'espace est insuffisant */
+    gap: 10px; /* Ajoute un espace entre les images */
+    margin-top: 10px; /* Ajoute un peu d'espace au-dessus des images */
+}
+
+.screenshots img {
+    width: calc(15% - 10px); /* Chaque image prend environ un tiers de la largeur, en tenant compte de la marge */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 5px; /* Ajoute un léger arrondi aux coins */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ajoute une légère ombre */
+    object-fit: cover; /* Assure que l'image remplit bien son conteneur sans se déformer (peut couper légèrement les bords) */
+}
+
+/* Pour les écrans plus petits, afficher les images sur une seule colonne */
+@media (max-width: 768px) {
+    .screenshots img {
+        width: 100%;
+    }
+}
     </style>
 </head>
 <body>
-    <header>
-        <h1>Fahmi ZOUARI</h1>
-        <p>Ingénieur en Génie Logiciel | Flutter | Angular | NestJs</p>
-    </header>
-    <img src="profile.jpeg" alt="Photo de Fahmi ZOUARI" class="profile-img">
-    <div class="container">
-        <div class="section">
-            <h2>À propos de moi</h2>
-            <p>Développeur passionné par la création d’applications innovantes et performantes.</p>
-        </div>
-        <div class="section">
-            <h2>Compétences Techniques</h2>
-            <div class="skills">
-                <div class="skill-box">Flutter</div>
-                <div class="skill-box">Dart</div>
-                <div class="skill-box">Angular</div>
-                <div class="skill-box">NestJs</div>
-                <div class="skill-box">Spring Boot</div>
-                <div class="skill-box">TypeScript</div>
-            </div>
-        </div>
-        <div class="section">
-            <h2>Expériences</h2>
-            <div class="timeline">
-                <div class="timeline-item"><strong>Développeur Flutter</strong> - Entreprise X (2022 - Présent)</div>
-                <div class="timeline-item"><strong>Développeur Fullstack</strong> - Startup Y (2020 - 2022)</div>
-                <div class="timeline-item"><strong>Ingénieur Logiciel</strong> - Entreprise Z (2018 - 2020)</div>
-            </div>
-        </div>
-        <div class="section">
-            <h2>Langues</h2>
-            <div class="languages">
-                <div class="lang-box">Arabe - Expérimenté</div>
-                <div class="lang-box">Français - Avancé</div>
-                <div class="lang-box">Anglais - Intermédiaire</div>
-            </div>
-        </div>
-        <div class="section contact">
-            <h2>Contact</h2>
-            <a href="mailto:fahmi.zouari@hotmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/fahmi-zouari/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/fahmi-zouari" target="_blank">GitHub</a>
+<header>
+    <h1>Fahmi ZOUARI</h1>
+    <p>Ingénieur en Génie Logiciel avec 4 ans d'expérience | Flutter | NestJs</p>
+</header>
+<img src="profile.jpeg" alt="Photo de Fahmi ZOUARI" class="profile-img">
+<div class="container">
+    <div class="section">
+        <h2>À propos de moi</h2>
+        <p>Ingénieur en génie logiciel avec <strong>4 ans d'expérience</strong> dans le développement d'applications web et mobile, avec une expertise particulière dans le framework <strong>Flutter</strong>. En tant que freelance, j'ai acquis une solide expérience dans l'analyse des besoins, la conception, le développement et le déploiement de solutions logicielles complètes. Passionné par la création d'applications innovantes et performantes, je suis constamment à la recherche de nouveaux défis et opportunités pour mettre mes compétences au service de projets ambitieux.</p>
+    </div>
+    <div class="section">
+        <h2>Compétences Techniques</h2>
+        <div class="skills">
+            <div class="skill-box">Flutter</div>
+            <div class="skill-box">Dart</div>
+            <div class="skill-box">Angular</div>
+            <div class="skill-box">NestJs</div>
+            <div class="skill-box">Spring Boot</div>
+            <div class="skill-box">TypeScript</div>
         </div>
     </div>
+
+    <div class="section" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>DigiKids</h3>
+                <p>Application mobile conçue pour permettre aux parents de suivre de près la vie de leurs enfants, offrant une visibilité totale sur les aspects importants.</p>
+                <p><strong>Technologies utilisées :</strong> Flutter / NestJs</p>
+                <p><strong>Poste :</strong> Team Leader / Full stack developer</p>
+                <h4>Captures d'écran</h4>
+                <div class="screenshots">
+                    <img src="digikids/1.webp" alt="Capture d'écran 1">
+                    <img src="digikids/2.webp" alt="Capture d'écran 1">
+                    <img src="digikids/3.webp" alt="Capture d'écran 1">
+                    <img src="digikids/4.webp" alt="Capture d'écran 1">
+                    <img src="digikids/5.webp" alt="Capture d'écran 1">
+                    <img src="digikids/6.webp" alt="Capture d'écran 1">
+                </div>
+                <p>
+                    <a href="[Lien vers votre application DigiKids sur le Play Store]" target="_blank">Voir sur le Play Store</a> |
+                    <a href="[Lien vers votre application DigiKids sur l'App Store]" target="_blank">Voir sur l'App Store</a>
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Eco Trans</h3>
+                <p>Application mobile innovante de services de transport, connectant passagers et chauffeurs en Libye pour des trajets sécurisés et abordables avec suivi en direct et paiement.</p>
+                <p><strong>Technologies utilisées :</strong> [Technologies utilisées pour Eco Trans]</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+                <h4>Captures d'écran</h4>
+                <div class="screenshots">
+                    <img src="ecotrans/1.webp" alt="Capture d'écran 1">
+                    <img src="ecotrans/2.webp" alt="Capture d'écran 1">
+                    <img src="ecotrans/3.webp" alt="Capture d'écran 1">
+                    <img src="ecotrans/4.webp" alt="Capture d'écran 1">
+                </div>
+                <p>
+                    <a href="[Lien vers votre application Eco Trans sur le Play Store]" target="_blank">Voir sur le Play Store</a> |
+                    <a href="[Lien vers votre application Eco Trans sur l'App Store]" target="_blank">Voir sur l'App Store</a>
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Les Experts</h3>
+                <p>Plateforme de formation spécifique offrant des cours en vidéo de haute qualité, des expériences interactives et des informations personnalisées pour le développement des compétences sectorielles.</p>
+                <p><strong>Technologies utilisées :</strong> [Technologies utilisées pour Les Experts]</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+                <p>
+                    <a href="[Lien vers votre application Les Experts sur le Play Store]" target="_blank">Voir sur le Play Store</a> |
+                    <a href="[Lien vers votre application Les Experts sur l'App Store]" target="_blank">Voir sur l'App Store</a>
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Rafiki</h3>
+                <p>Application polyvalente de traduction et de conseil en ligne, connectant fournisseurs de services et clients via chat en temps réel, paiement sécurisé et système d'évaluation.</p>
+                <p><strong>Fonctionnalités Clés :</strong> Traduction, Conseil en Ligne, Chat en Temps Réel, Paiement, Évaluation.</p>
+                <p><strong>Technologies utilisées :</strong> [Technologies utilisées pour Rafiki]</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+                <p>
+                    <a href="[Lien vers votre application Rafiki sur le Play Store]" target="_blank">Voir sur le Play Store</a> |
+                    <a href="[Lien vers votre application Rafiki sur l'App Store]" target="_blank">Voir sur l'App Store</a>
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Paramedics Inventory</h3>
+                <p>Application permettant le comptage et le suivi rapide et précis de divers éléments, avec des fonctionnalités de comptage par lots, historique et synchronisation/sauvegarde.</p>
+                <p><strong>Les Caractéristiques :</strong> Comptage Précis, Interface Intuitive, Comptage par Lots, Historique, Synchronisation.</p>
+                <p><strong>Technologies utilisées :</strong> [Technologies utilisées pour Paramedics Inventory]</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+                <p>
+                    <a href="[Lien vers votre application Paramedics Inventory sur le Play Store]" target="_blank">Voir sur le Play Store</a> |
+                    <a href="[Lien vers votre application Paramedics Inventory sur l'App Store]" target="_blank">Voir sur l'App Store</a>
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Revolution Laundry</h3>
+                <p>Application mobile multiplateforme (Flutter/Firebase) pour localiser et gérer à distance les cycles de lavage et de séchage en laverie.</p>
+                <p><strong>Technologies utilisées :</strong> Flutter / Firebase</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Mes Silos</h3>
+                <p>Application mobile (Flutter/Firebase) pour la gestion des silos par les planteurs et application web (Spring Boot/PostgreSQL) pour l'administration et les statistiques.</p>
+                <p><strong>Technologies utilisées :</strong> Flutter / Firebase / Spring Boot / PostgreSQL</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Digicommerce</h3>
+                <p>Application web (Angular/Spring Boot/MySQL) permettant la consultation de catalogues de commerçants et la passation de commandes en ligne.</p>
+                <p><strong>Technologies utilisées :</strong> Angular / Spring Boot / MySQL</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Xefi santé</h3>
+                <p>Application multiplateforme (Flutter/Firebase/Spring Boot/MySQL) pour la gestion d'un centre de bien-être (actualités, discussion, événements, analyses).</p>
+                <p><strong>Technologies utilisées :</strong> Flutter / Firebase / Spring Boot / MySQL</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Patient Mobile</h3>
+                <p>Application mobile multiplateforme (Flutter/Spring Boot/SQLServer) pour la consultation d'informations médicales, la prise de rendez-vous et les enquêtes de satisfaction.</p>
+                <p><strong>Technologies utilisées :</strong> Flutter / Spring Boot / SQLServer</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Hospitalisation à domicile</h3>
+                <p>Application mobile multiplateforme (Flutter/Spring Boot/MySQL) pour la demande de services par les patients et le suivi par les infirmiers.</p>
+                <p><strong>Technologies utilisées :</strong> Flutter / Spring Boot / MySQL</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Risk Management (OOREDOO Tunisie)</h3>
+                <p>Application web (Spring Boot/Angular) pour la gestion des risques avec tableau de bord décisionnel.</p>
+                <p><strong>Technologies utilisées :</strong> Spring Boot / Angular</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Application Web de Gestion d'Agence de Voyages (Best Tours)</h3>
+                <p>Application web (CodeIgniter/HTML/CSS/JavaScript/MySQL) pour la gestion des services d'une agence de voyages et l'automatisation des tâches.</p>
+                <p><strong>Technologies utilisées :</strong> CodeIgniter / HTML / CSS / JavaScript / MySQL</p>
+                <p><strong>Poste :</strong> Full stack developer</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Langues</h2>
+        <div class="languages">
+            <div class="lang-box">Anglais</div>
+            <div class="lang-box">Français</div>
+            <div class="lang-box">Arabe</div>
+        </div>
+    </div>
+    <div class="section contact">
+        <h2>Contact</h2>
+        <div class="languages">
+            <a href="mailto:fahmi.zouari@hotmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/fahmi-zouari/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/fahmizouari" target="_blank">GitHub</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
